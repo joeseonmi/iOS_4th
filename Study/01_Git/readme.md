@@ -12,7 +12,7 @@ local은 나혼자 관리하고 remote는 여러사람이 볼수있지만 ~허�
 
 1. github에서 새로운 remote생성 - ( .gitignore, readme.md 빼먹지말고 )
 
-	![images02](/gitstudyimages/002.png)
+	![images02](002.png)
 
 	- 외부저장소이름정하기
 	- 체크하면 readme.md 파일을 생성해준다
@@ -26,7 +26,7 @@ local은 나혼자 관리하고 remote는 여러사람이 볼수있지만 ~허�
 
 4. github에서 remote링크가져다가 local에 연결해주기
 	`git remote add origin <저장소주소>`
-	![image03](/gitstudyimages/003.png)
+	![image03](003.png)
 	
 
 5. work space에는 아직 아무파일이없으니까 remote에서 readme, gitignore를 받아준다 `git pull origin master` - 받은다음 gitignore수정하던가, 수정하고 받던가해야됨
