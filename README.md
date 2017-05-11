@@ -10,3 +10,5 @@
 
 ## 😂 Study
 01. [Github 배우기](https://github.com/joeseonmi/iOS_4th/tree/master/Study/01_Git)
+
+02. [변수와 함수](https://github.com/joeseonmi/iOS_4th/tree/master/Study/03_%EB%B3%80%EC%88%98%EC%99%80%ED%95%A8%EC%88%98)
