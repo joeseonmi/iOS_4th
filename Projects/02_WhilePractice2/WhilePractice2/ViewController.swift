@@ -54,8 +54,9 @@ class ViewController: UIViewController {
             var lottoNumbers:[Int] = []
             
             while lottoNumbers.count < 6 {
-                let randomNum:UInt32 = arc4random_uniform(45) //->번호를 랜덤으로뽑아
-                lottoNumbers.append(Int(randomNum))//->lottoNumber배열에 넣어주세여
+                let randomNum:UInt32 = arc4random_uniform(46)//->번호를 랜덤으로뽑아
+                if randomNum != 0 {
+                    lottoNumbers.append(Int(randomNum))}//->lottoNumber배열에 넣어주세여
             }
             
             return lottoNumbers
@@ -74,9 +75,9 @@ class ViewController: UIViewController {
             
             while notRepeatNumber.count < 6
             {
-               let randomNum:UInt32 = arc4random_uniform(45)
+               let randomNum:UInt32 = arc4random_uniform(46)
                 
-                if !notRepeatNumber.contains(Int(randomNum))
+                if randomNum != 0 && !notRepeatNumber.contains(Int(randomNum))
                 {
                     notRepeatNumber.append(Int(randomNum))
                 }
