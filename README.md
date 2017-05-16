@@ -15,3 +15,6 @@
 03. [변수와 함수](https://github.com/joeseonmi/iOS_4th/tree/master/Study/03_%EB%B3%80%EC%88%98%EC%99%80%ED%95%A8%EC%88%98)
 
 04. [if문 이해하고 연습하기](https://github.com/joeseonmi/iOS_4th/tree/master/Study/04_if%EB%AC%B8)
+
+05. [collecion Type / 반복문](https://github.com/joeseonmi/iOS_4th/tree/master/Study/05_Collection%20Type) 
+	- [Collection Type / 반복문 연습](https://github.com/joeseonmi/iOS_4th/tree/master/Projects/02_WhilePractice2)
