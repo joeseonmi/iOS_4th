@@ -15,8 +15,35 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var displayLabel: UILabel!
     
-////////////////// Nunber button ///////////////////
-    
+////////////////// Nunber button //////////////////////////////
+//
+//두개의 if문이 같은역할을 하니까, 함수로 만들어서 호출해줄 수 있다//
+//
+//    func thouchDisplayNumber(_ numberString:String) {
+//        if displayNumber == "0"
+//        {
+//            displayNumber = "numberString"
+//        }else{
+//            displayNumber += "numberString"
+//        }
+//
+//    }
+//    
+//    
+//    func addFirstNumSecondNum(){
+//        if tempOperation.isEmpty {
+//            tempFirstNumber = Int(displayNumber)!
+//        }else{
+//            tempSecondNumber = Int(displayNumber)!
+//        }
+//    }
+//
+//
+//    @IBAction func thouchUpNum0(_ sender: UIButton) {
+//        thouchDisplayNumber("0")
+//        addFirstNumSecondNumber()
+//    }
+///////////////////////////////////////////////////////////////
     
     @IBAction func thouchUpNum0(_ sender: UIButton) {
         
@@ -167,6 +194,7 @@ class ViewController: UIViewController {
     }
     
     ////////////////// Operation func ///////////////////
+    
     
     var tempFirstNumber:Int = 0
     var tempSecondNumber:Int = 0
