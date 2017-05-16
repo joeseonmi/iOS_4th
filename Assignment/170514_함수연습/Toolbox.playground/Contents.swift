@@ -48,7 +48,7 @@ func cngFahrenToCentigrade(inputFahren fahren:Double) -> Double
 
 func cngCentigradeToFahren(inputCentigrade centigrade:Double) -> Double
 {
-    let result:Double = centigrade * 1.8 + Double(32)
+    let result:Double = centigrade * 1.8 + Double(32) //let result:Double = centigrade * 1.8 + 32
     return result
 }
 
@@ -74,6 +74,16 @@ func cngMbtoGb(inputMb mb:Double)->Double
 
 //5. 시간(hhmmss)을 받으면 초단위로 변경, 초단위를 시간으로변경
 //ex) 11320 >> 4400초
+
+func second(fromTime time:UInt)->UInt
+{
+    let hour:UInt = time/10000
+    let min:UInt = (time%10000)/100
+    let sec:UInt = time%100
+    
+    return (hour * 3600) + (min * 60) + sec
+}
+
 
 
 

@@ -101,7 +101,8 @@ func getLeapYear(leapYear year:Int) -> Bool
 {
     let result:Bool = false
     
-    if ( year % 4 == 0 ) || ( year % 100 == 0 && year % 400 == 0 )
+    if ( year % 4 == 0 && year % 100 != 0 ) || ( year % 400 == 0 )
+        //400이 앞에오는게 좋은게 or를쓸때 앞쪽만 읽고 참이면 지나가기때문에 400이 더 앞이면 좋다
     {
         print("윤년")
         return true
@@ -111,7 +112,7 @@ func getLeapYear(leapYear year:Int) -> Bool
     return result
 }
 
-getLeapYear(leapYear: 2020)
+getLeapYear(leapYear: 2100)
 
 
 
