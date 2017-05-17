@@ -18,3 +18,5 @@
 
 05. [collecion Type / 반복문](https://github.com/joeseonmi/iOS_4th/tree/master/Study/05_Collection%20Type) 
 	- [Collection Type / 반복문 연습](https://github.com/joeseonmi/iOS_4th/tree/master/Projects/02_WhilePractice2)
+
+06. [클래스와 객체](https://github.com/joeseonmi/iOS_4th/tree/master/Study/06_%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4)
