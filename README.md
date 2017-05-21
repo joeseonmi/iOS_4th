@@ -8,6 +8,7 @@
 
 ## 📁 Projects
 - 01_[Calculationproject (170510)](https://github.com/joeseonmi/iOS_4th/tree/master/Projects/01_Calculationproject_re)
+- 02_[Vendingmachine (170519)]()
 
 ## 😂 Study
 01. [Github 배우기](https://github.com/joeseonmi/iOS_4th/tree/master/Study/01_Git)
