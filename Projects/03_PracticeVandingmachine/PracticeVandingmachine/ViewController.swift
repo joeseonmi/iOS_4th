@@ -48,10 +48,16 @@ class ViewController: UIViewController {
             if index == sender.tag { //index랑 sendertag가 같으면 if문이 돈다
                 if Int(self.returnChangesText.text!)! >= value.cost && value.count > 0 { //Drink(name:String, cost: Int) 이거시 벨륜데 여기의 코스트보다 크거나 같으면돈다)//
                     switch index {
-                    case 0...2 :
+                    case 0 :
                         self.returnChangesText.text = String(Int(self.returnChangesText.text!)! - value.cost)
                         value.count -= 1
-                        default: print("예상치 못한 값")
+                    case 1 :
+                        self.returnChangesText.text = String(Int(self.returnChangesText.text!)! - value.cost)
+                        value.count -= 1
+                    case 2 :
+                        self.returnChangesText.text = String(Int(self.returnChangesText.text!)! - value.cost)
+                        value.count -= 1
+                    default: print("예상치 못한 값")
                     }
                     self.displayLabel.text = "\(value.name) 받으세요."
                  
@@ -116,7 +122,11 @@ class ViewController: UIViewController {
             if index == sender.tag {
                 
                 switch index {
-                case 0...2 :
+                case 0 :
+                    self.returnChangesText.text = String(Int(self.returnChangesText.text!)! + value.costValue)
+                case 1 :
+                    self.returnChangesText.text = String(Int(self.returnChangesText.text!)! + value.costValue)
+                case 2 :
                     self.returnChangesText.text = String(Int(self.returnChangesText.text!)! + value.costValue)
                 default : print("예상치 못한 값")
                 }
@@ -144,6 +154,11 @@ class ViewController: UIViewController {
         self.returnChangesText.text = "0"
         
     }
+    
+    
+    
+    
+    
     
     
 }
