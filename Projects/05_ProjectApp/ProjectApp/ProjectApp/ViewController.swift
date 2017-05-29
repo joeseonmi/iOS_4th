@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
   
     @IBAction func clickLogin(_ sender: UIButton) {
     }
@@ -18,6 +18,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        func textFieldDidBeginEditing(textField: UITextField){
+//            sc.setcontentOffset(CGPoint(x: <#T##CGFloat#>, y: <#T##CGFloat#>,animated: true))
+            //return true
+//        }
+//    
+//        func textFieldShouldReturn(textField: UITextField){
+//            textfield.resignFirstResponder()
+//            sc.setContentOffset()위치랑 애니메이션 트루
+//        }
+//        
      
     }
 

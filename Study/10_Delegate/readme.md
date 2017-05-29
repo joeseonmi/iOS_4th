@@ -50,3 +50,72 @@ public protocol UITextFieldDelegate : NSObjectProtocol {
     optional public func textFieldShouldReturn(_ textField: UITextField) -> Bool // called when 'return' key pressed. return NO to ignore.
     
 ```
+-
+
+-
+
+## UIScrollView
+
+- 오토레이아웃으로 만드는데 예외상황으로빠짐(특정한 룰이있고 그대로 만들어야됨)
+
+#### ContentView
+- 스크롤뷰 뒤에 컨텐츠뷰가 존재(컨텐츠뷰는 스크롤뷰보다 커야한다) 스크롤뷰는 **실제보이는**화면 컨텐츠뷰는 지도에 더 넓은 부분이라고 할수있음
+
+- 코드를 통해 만들게되면 컨텐츠뷰의 사이즈를정할수있다 스토리보드로 만들게되면 사이즈를 정할수 없어서 이걸 만드는 특이한 방법이 있다
+
+```swift
+// 스크롤뷰 속성들
+open class UIScrollView : UIView, NSCoding {
+
+    
+    open var contentOffset: CGPoint // default CGPointZero
+
+    open var contentSize: CGSize // default CGSizeZero
+
+    open var contentInset: UIEdgeInsets // default UIEdgeInsetsZero. add additional scroll area around content
+
+    weak open var delegate: UIScrollViewDelegate? // default nil. weak reference
+
+    open var isDirectionalLockEnabled: Bool // default NO. if YES, try to lock vertical or horizontal scrolling while dragging
+
+    open var bounces: Bool // default YES. if YES, bounces past edge of content and back again
+
+    open var alwaysBounceVertical: Bool // default NO. if YES and bounces is YES, even if content is smaller than bounds, allow drag vertically
+
+    open var alwaysBounceHorizontal: Bool // default NO. if YES and bounces is YES, even if content is smaller than bounds, allow drag horizontally
+
+    open var isPagingEnabled: Bool // default NO. if YES, stop on multiples of view bounds
+
+    open var isScrollEnabled: Bool // default YES. turn off any dragging temporarily
+
+    open var showsHorizontalScrollIndicator: Bool // default YES. show indicator while we are tracking. fades out after tracking
+
+    open var showsVerticalScrollIndicator: Bool // default YES. show indicator while we are tracking. fades out after tracking
+
+    open var scrollIndicatorInsets: UIEdgeInsets // default is UIEdgeInsetsZero. adjust indicators inside of insets
+
+    open var indicatorStyle: UIScrollViewIndicatorStyle // default is UIScrollViewIndicatorStyleDefault
+
+    @available(iOS 3.0, *)
+    open var decelerationRate: CGFloat
+
+    open var indexDisplayMode: UIScrollViewIndexDisplayMode
+
+    
+    open func setContentOffset(_ contentOffset: CGPoint, animated: Bool) // animate at constant velocity to new offset
+
+    open func scrollRectToVisible(_ rect: CGRect, animated: Bool) // scroll so rect is just visible (nearest edges). nothing if rect completely visible
+
+    
+    open func flashScrollIndicators() // displays the scroll indicators for a short time. This should be done whenever you bring the scroll view to front.
+```
+### 스토리보드에서 스크롤뷰
+- 스토리보드를 늘린다 (프리폼으로)
+- 스크롤뷰를깐다 (스크롤뷰는 뷰컨트롤러 크기에 맞췄기때문에 변할 수 있다)
+- 그위에 다시 뷰를 올린다(컨텐츠뷰는 높이를 고정해놓았기때문에 줄어들지않는다)
+
+### 스크롤뷰를 이용해서 키보드가 올라왔을 때 입력창 가리지않게 같이 올려주기
+- 뷰를 선택하고 `editor - embed in - scroll` 하면 스크롤뷰가 생기고 오토레이아웃 다시잡아줘야되니까 처음부터 고려하고 만들자^^
+- 스토리보드에서 텍스트필드잡고 뷰컨트롤러선택해서 델리게이트 연결해줄수있고, 뷰컨트롤러에 델리게이트 호출된상태여야됨
+
+
