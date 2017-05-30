@@ -29,10 +29,10 @@
 
 - UIViewController Instance Load
 	- 객체클래스를 이니셜라이즈해서 인스턴스 하는데 처음 뷰 컨트롤러를 시작할때는 스토리보드를 통해 가져옴. 내가 특정 뷰를 가져와야된다면 스토리보드를 통해서 뷰컨트롤러의 인스턴스를 가져와서 불러야한다.
-![img](/Users/joe/iOS_4th/Study/13_UIViewController/001.png)
+![img](https://github.com/joeseonmi/iOS_4th/blob/master/Study/13_UIViewController/001.png)
 	
 	- 인스턴스를 만들때 이런식으로
-	![img2](/Users/joe/iOS_4th/Study/13_UIViewController/002.png)
+	![img2](https://github.com/joeseonmi/iOS_4th/blob/master/Study/13_UIViewController/002.png)
 	
 #### 🎃 Present Modally(화면 전환)
 
@@ -43,13 +43,13 @@
 - 인스턴스임
 - 앱의 인터페이스 흐름을 정의하는 데 사용
 - 화면학고 화면 사이의 화살표
-- ![img03](/Users/joe/iOS_4th/Study/13_UIViewController/003.png)
+- ![img03](https://github.com/joeseonmi/iOS_4th/blob/master/Study/13_UIViewController/003.png)
 
 **shuldPerformSegueWithIdentifier: sender** -> 세그가 어떤 조건의 결과에따라 다른 뷰컨트롤러로 가야할때 if문을 여기다가 넣어준다(**이 세그에 진입할것인지말것인지**)
 - **prepareForSegue** 이 세그에 **진입했을때 줘야할 데이터가 있는지**(로그인할때 로그인하는사람에대한 정보같은거)
 
 - 위의 함수들을 쓰는 타이밍
-	![img4](/Users/joe/iOS_4th/Study/13_UIViewController/004.png)
+	![img4](https://github.com/joeseonmi/iOS_4th/blob/master/Study/13_UIViewController/004.png)
 
 ###### Unwind Segue
 
