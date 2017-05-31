@@ -20,21 +20,24 @@
 04. [if문 이해하고 연습하기](https://github.com/joeseonmi/iOS_4th/tree/master/Study/04_if%EB%AC%B8)
 
 05. [collecion Type / 반복문](https://github.com/joeseonmi/iOS_4th/tree/master/Study/05_Collection%20Type) 
-	- [Collection Type / 반복문 연습](https://github.com/joeseonmi/iOS_4th/tree/master/Projects/02_WhilePractice2)
+	> * [Collection Type / 반복문 연습](https://github.com/joeseonmi/iOS_4th/tree/master/Projects/02_WhilePractice2)
 
 06. [클래스와 객체](https://github.com/joeseonmi/iOS_4th/tree/master/Study/06_%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4)
-	- [포켓몬만들기 연습](https://github.com/joeseonmi/iOS_4th/tree/master/Study/06_%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4/PoketmonPractice)
-	- [자판기 혼자만들기](https://github.com/joeseonmi/iOS_4th/tree/master/Study/06_%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4/PracticeVandingmachine)
+	> * [포켓몬만들기 연습](https://github.com/joeseonmi/iOS_4th/tree/master/Study/06_%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4/PoketmonPractice)
+	
+	> * [자판기 혼자만들기](https://github.com/joeseonmi/iOS_4th/tree/master/Study/06_%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4/PracticeVandingmachine)
 
 07. [UI](https://github.com/joeseonmi/iOS_4th/tree/master/Study/07_UI)
 08. [클래스와 구조체](https://github.com/joeseonmi/iOS_4th/tree/master/Study/08_%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B5%AC%EC%A1%B0%EC%B2%B4)
 
 09. [AutoLayout](https://github.com/joeseonmi/iOS_4th/tree/master/Study/09_AutoLayout)
 10. [Delegate](https://github.com/joeseonmi/iOS_4th/tree/master/Study/10_Delegate)
+	> * [Practice UItextField Delegate](https://github.com/joeseonmi/iOS_4th/blob/master/Study/10_Delegate/Storyboard-delegate/Storyboard/ViewController.swift)
 11. [StackView
 ](https://github.com/joeseonmi/iOS_4th/tree/master/Study/11_StackView)
 12. [UserDefault](https://github.com/joeseonmi/iOS_4th/tree/master/Study/12_UserDefault)
 13. [UIViewController](https://github.com/joeseonmi/iOS_4th/tree/master/Study/13_UIViewController)
+	> * [UIViewController & UserDeFault & UItextField & etc. ](https://github.com/joeseonmi/iOS_4th/tree/master/Study/13_UIViewController/PracticeUIViewControllerAndTextfield/PracticeUIViewAndTextfield)
 
 ## 🙀 Morning Quiz
 
