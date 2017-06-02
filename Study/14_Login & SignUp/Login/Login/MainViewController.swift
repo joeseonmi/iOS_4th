@@ -36,11 +36,11 @@ class MainViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         let isAuthentified: Bool = UserDefaults.standard.bool(forKey: Authentification.authentificationBool)
         //얘가 true인지  false인지를 받아서
         
-        super.viewDidAppear(animated)
         if !isAuthentified{
             self.performSegue(withIdentifier: "LoginViewVontrollerSegue", sender: self)
             //로그인되면 값이 true로 바뀌는데 트루가 아니라면 로그인화면으로 가라. 로그인 버튼 함수에 로그인성공하면 유져디폴트값에 이거를 true로 바꾸라는 명령어가 있음

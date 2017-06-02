@@ -6,6 +6,10 @@
 //  Copyright © 2017년 joe. All rights reserved.
 //
 
+
+
+
+
 import UIKit
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
@@ -51,6 +55,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         if textField.tag < 3 {
             self.view.viewWithTag(textField.tag+1)?.becomeFirstResponder()
         }else if textField.tag == 3 {
+            //엘스이프 말고 걍 빼도될거같음 태그는 텍스트필드태그로 하면 될듯
             self.view.viewWithTag(3)?.resignFirstResponder()
         }
         return true
