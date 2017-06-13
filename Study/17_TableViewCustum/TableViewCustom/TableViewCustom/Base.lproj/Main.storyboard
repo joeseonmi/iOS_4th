@@ -133,7 +133,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSX-oW-DuK">
                                         <rect key="frame" x="0.0" y="84" width="375" height="563"/>
                                         <subviews>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="193" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wK9-fR-U4r">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="193" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wK9-fR-U4r">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <prototypes>
@@ -141,15 +141,9 @@
                                                         <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gkA-na-Wnd" id="Utb-dl-tLA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="1l5-NL-lfo">
-                                                                    <rect key="frame" x="-0.5" y="179.5" width="375" height="20"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="20" id="bVd-XT-PIG"/>
-                                                                    </constraints>
-                                                                </imageView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ls0-2Q-fsr">
                                                                     <rect key="frame" x="-0.5" y="10" width="375" height="100"/>
                                                                 </imageView>
@@ -178,8 +172,8 @@
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도시이름" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsv-P8-TQx">
-                                                                                    <rect key="frame" x="189" y="3.5" width="75" height="20.5"/>
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <rect key="frame" x="189" y="9.5" width="75" height="14.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
@@ -201,6 +195,13 @@
                                                                         <constraint firstItem="Snw-Yx-3Sk" firstAttribute="width" secondItem="aBE-Rf-IfK" secondAttribute="width" id="unN-S0-yDK"/>
                                                                     </constraints>
                                                                 </stackView>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1l5-NL-lfo">
+                                                                    <rect key="frame" x="0.0" y="198" width="375" height="1"/>
+                                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="1" id="bVd-XT-PIG"/>
+                                                                    </constraints>
+                                                                </imageView>
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstItem="uVG-hk-plW" firstAttribute="width" secondItem="Utb-dl-tLA" secondAttribute="width" multiplier="0.2" id="0VT-AZ-HtK"/>
@@ -213,7 +214,7 @@
                                                                 <constraint firstItem="1l5-NL-lfo" firstAttribute="width" secondItem="Utb-dl-tLA" secondAttribute="width" id="Kgo-Dt-bvp"/>
                                                                 <constraint firstItem="Ls0-2Q-fsr" firstAttribute="width" secondItem="Utb-dl-tLA" secondAttribute="width" id="MWn-vf-ZII"/>
                                                                 <constraint firstAttribute="trailingMargin" secondItem="aBE-Rf-IfK" secondAttribute="trailing" constant="10" id="UQ1-1c-hf4"/>
-                                                                <constraint firstAttribute="bottom" secondItem="1l5-NL-lfo" secondAttribute="bottom" id="cam-6r-M62"/>
+                                                                <constraint firstAttribute="bottom" secondItem="1l5-NL-lfo" secondAttribute="bottom" constant="1" id="cam-6r-M62"/>
                                                                 <constraint firstItem="aBE-Rf-IfK" firstAttribute="top" secondItem="Ls0-2Q-fsr" secondAttribute="bottom" constant="5" id="r5u-Jj-yyP"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
@@ -262,6 +263,24 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="oN9-uL-Yxn">
+            <objects>
+                <viewController id="Wsw-Ly-sRW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OA1-64-9g7"/>
+                        <viewControllerLayoutGuide type="bottom" id="qZv-sb-cQa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5le-qV-bhs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITh-WW-J7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="805"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="jgu-61-V5x">
             <objects>
@@ -277,7 +296,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="10t-bX-ecJ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="via-UE-WtY">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="via-UE-WtY">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="via-UE-WtY" secondAttribute="height" id="Hla-7d-0wm"/>
@@ -382,7 +401,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="line.png" width="750" height="1"/>
         <image name="logo.png" width="512" height="512"/>
     </resources>
 </document>
