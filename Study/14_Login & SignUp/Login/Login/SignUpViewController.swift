@@ -6,10 +6,6 @@
 //  Copyright © 2017년 joe. All rights reserved.
 //
 
-
-
-
-
 import UIKit
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
@@ -55,7 +51,6 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         if textField.tag < 3 {
             self.view.viewWithTag(textField.tag+1)?.becomeFirstResponder()
         }else if textField.tag == 3 {
-            //엘스이프 말고 걍 빼도될거같음 태그는 텍스트필드태그로 하면 될듯
             self.view.viewWithTag(3)?.resignFirstResponder()
         }
         return true
@@ -74,18 +69,40 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
 //            //회원가입하자마자 로그인 시킨상태로 하고싶으면
 //            UserDefaults.standard.set(true, forKey: Authentification.authentificationBool)
             
-            print(UserDefaults.standard.string(forKey: "Email"))
+            print(UserDefaults.standard.string(forKey: Authentification.email)!)
             
         } else {
             self.subTitleLable.text = "다 채워주세여"
         }
+        
+        let mainVC : MainViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        
+        self.present(mainVC, animated: true, completion: nil)
+
     }
     
     @IBAction func signUpBtntouched(_ sender: UIButton) {
         
+        let checkAlert:UIAlertController = UIAlertController(title: "가입할까여?",
+                                                             message: "진짜루?",
+                                                             preferredStyle: .actionSheet)
+        let okBtn:UIAlertAction = UIAlertAction(title: "넹",
+                                                style: .default,
+                                                handler: {(checkAlert:UIAlertAction) in self.signUpRequest()} )
+        let cancelBtn:UIAlertAction = UIAlertAction(title: "아뇽", style: .cancel, handler: nil)
+        let sosoBtn:UIAlertAction = UIAlertAction(title: "어떠카징", style: .default, handler: nil)
+      
+        checkAlert.addAction(okBtn)
+        checkAlert.addAction(cancelBtn)
+        checkAlert.addAction(sosoBtn)
+        
+        self.present(checkAlert, animated: true, completion: nil)
+        
         self.signUpRequest()
-        dismiss(animated: true, completion: nil)
-        self.performSegue(withIdentifier: "unwindSegue" , sender: self)
+//        dismiss(animated: true, completion: nil)
+        
+//        //세그 지워서 이거 안먹음
+//        self.performSegue(withIdentifier: "unwindSegue" , sender: self)
         
         
     }

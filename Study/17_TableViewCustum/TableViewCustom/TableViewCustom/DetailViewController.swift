@@ -9,14 +9,17 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    /* property * outlet ********************************************/
-    
+    /*********************************************************/
+    //                  Button and Oulet                     //
+    /*********************************************************/
     @IBOutlet weak var mainImg: UIImageView!
     @IBOutlet weak var contentsTextView: UITextView!
     
     var getIndex:Int?
     
-    /* life Cycle ***************************************************/
+    /*********************************************************/
+    //                      Life Cycle                       //
+    /*********************************************************/
  
     override func viewDidLoad() {
         super.viewDidLoad()

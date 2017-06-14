@@ -14,12 +14,23 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextF: UITextField!
     @IBOutlet weak var scrollview: UIScrollView!
   
+    @IBAction func clickSignup(_ sender: UIButton) {
+        
+        let signupVC: SignUpViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        
+        self.present(signupVC, animated: true, completion: nil)
+        
+    }
+    
+    
     @IBAction func clickedLogin(_ sender: UIButton) {
         
         loginRequest()
         
     }
    
+    //////////////////////////////////////////////////////////////////////////
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +42,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    //////////////////////////////////////////////////////////////////////////
 
     func loginRequest(){
         
@@ -47,7 +59,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 
                 self.dismiss(animated: true, completion: nil)
             } else {
-                print("로그인실패")
+                let failalert:UIAlertController = UIAlertController(title: "로그인실패",
+                                                                    message: "아이디와 비밀번호를 확인하세여",
+                                                                    preferredStyle: .alert)
+                
+                let failaction:UIAlertAction = UIAlertAction(title: "확인",
+                                                             style: .cancel,
+                                                             handler: nil)
+                
+                failalert.addAction(failaction)
+                
+                self.present(failalert, animated: true, completion: nil)
             }
             
         }

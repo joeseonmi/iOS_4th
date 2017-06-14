@@ -11,7 +11,9 @@ import UIKit
 class TableViewCell: UITableViewCell {
     
     
-    /* property * outlet ********************************************/
+    /*********************************************************/
+    //                  Button and Oulet                     //
+    /*********************************************************/
     
     @IBOutlet weak var bgimg: UIImageView!
     @IBOutlet weak var tripCity: UILabel!
@@ -20,7 +22,9 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var cityName: UILabel!
     @IBOutlet weak var priceLable: UILabel!
     
-    /* life Cycle ***************************************************/
+    /*********************************************************/
+    //                      Life Cycle                       //
+    /*********************************************************/
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,7 +32,9 @@ class TableViewCell: UITableViewCell {
     }
 
     
-    /* function ***************************************************/
+    /*********************************************************/
+    //                         func                          //
+    /*********************************************************/
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         

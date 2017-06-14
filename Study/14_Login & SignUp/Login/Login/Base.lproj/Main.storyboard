@@ -15,7 +15,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -31,28 +31,28 @@
                                         <rect key="frame" x="0.0" y="0.0" width="413" height="936"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dqe-Pz-290">
-                                                <rect key="frame" x="21" y="213.33333333333337" width="372" height="309.33333333333326"/>
+                                                <rect key="frame" x="21.333333333333343" y="213.66666666666669" width="371.66666666666663" height="309.33333333333331"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGP-HE-H70">
-                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="59.999999999999972"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="371.66666666666669" height="60.000000000000028"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="50"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="해 주 세 요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIX-Jm-eTi">
-                                                        <rect key="frame" x="0.0" y="59.999999999999972" width="372" height="37.333333333333371"/>
+                                                        <rect key="frame" x="0.0" y="60.000000000000028" width="371.66666666666669" height="37.333333333333314"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="31"/>
                                                         <color key="textColor" red="0.44757811670808978" green="0.75009775954552405" blue="0.96765097809321987" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4VK-h8-jWa" userLabel="margin10">
-                                                        <rect key="frame" x="0.0" y="97.333333333333343" width="372" height="20"/>
+                                                        <rect key="frame" x="0.0" y="97.333333333333343" width="371.66666666666669" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="bb6-mD-lGf"/>
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QZc-Qa-DKS">
-                                                        <rect key="frame" x="0.0" y="117.33333333333334" width="372" height="40"/>
+                                                        <rect key="frame" x="0.0" y="117.33333333333334" width="371.66666666666669" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Mdu-TJ-E2u"/>
                                                         </constraints>
@@ -64,13 +64,13 @@
                                                         </connections>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZw-bt-06h" userLabel="margin10">
-                                                        <rect key="frame" x="0.0" y="157.33333333333334" width="372" height="10"/>
+                                                        <rect key="frame" x="0.0" y="157.33333333333334" width="371.66666666666669" height="10"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="yde-YV-J2F"/>
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRC-cv-mZA">
-                                                        <rect key="frame" x="0.0" y="167.33333333333334" width="372" height="40"/>
+                                                        <rect key="frame" x="0.0" y="167.33333333333334" width="371.66666666666669" height="40"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
@@ -79,13 +79,13 @@
                                                         </connections>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfq-d9-bmj" userLabel="margin10">
-                                                        <rect key="frame" x="0.0" y="207.33333333333334" width="372" height="10"/>
+                                                        <rect key="frame" x="0.0" y="207.33333333333334" width="371.66666666666669" height="10"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="Foe-Ys-Fks"/>
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYl-4w-RQl">
-                                                        <rect key="frame" x="0.0" y="217.33333333333334" width="372" height="40.000000000000028"/>
+                                                        <rect key="frame" x="0.0" y="217.33333333333334" width="371.66666666666669" height="40.000000000000028"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                         <state key="normal" title="로그인"/>
@@ -94,28 +94,29 @@
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViK-9g-vk9" userLabel="margin10">
-                                                        <rect key="frame" x="0.0" y="257.33333333333337" width="372" height="10"/>
+                                                        <rect key="frame" x="0.0" y="257.33333333333337" width="371.66666666666669" height="10"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="hKT-cS-95K"/>
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dta-WF-eh7">
-                                                        <rect key="frame" x="0.0" y="267.33333333333337" width="372" height="41.999999999999943"/>
+                                                        <rect key="frame" x="0.0" y="267.33333333333337" width="371.66666666666669" height="42"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디없으면" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLP-BB-aqM">
-                                                                <rect key="frame" x="0.0" y="0.0" width="186" height="41.999999999999943"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="186" height="42"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac2-yz-jo7">
-                                                                <rect key="frame" x="186" y="0.0" width="186" height="41.999999999999943"/>
+                                                                <rect key="frame" x="186" y="0.0" width="185.66666666666663" height="42"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="가입하셈">
                                                                     <color key="titleColor" red="1" green="0.92859490074594975" blue="0.052213306427354556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <segue destination="rvB-33-P7t" kind="presentation" id="XCm-4k-7xm"/>
+                                                                    <action selector="clickSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esY-DC-FZW"/>
+                                                                    <segue destination="rvB-33-P7t" kind="show" id="2wx-gw-ejX"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -153,6 +154,7 @@
                             <constraint firstItem="GHx-2i-S6P" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="zCV-hf-fMr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TyE-hn-Xtv"/>
                     <connections>
                         <outlet property="emailTextF" destination="QZc-Qa-DKS" id="hEt-Pk-drx"/>
                         <outlet property="passwordTextF" destination="aRC-cv-mZA" id="muf-w0-LHC"/>
@@ -161,12 +163,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.637681159420293" y="35.869565217391305"/>
+            <point key="canvasLocation" x="931.88405797101461" y="35.869565217391305"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="lpu-00-Vvl">
             <objects>
-                <viewController id="TUI-0M-LbA" customClass="MainViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="TUI-0M-LbA" customClass="MainViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DPa-qX-7SJ"/>
                         <viewControllerLayoutGuide type="bottom" id="k3b-GV-G4b"/>
@@ -175,46 +177,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oA8-Z1-A6s">
-                                <rect key="frame" x="30" y="30" width="354" height="696"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anq-X7-EWB">
-                                        <rect key="frame" x="149.33333333333337" y="0.0" width="55.666666666666657" height="38.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAY-1p-GfB">
-                                        <rect key="frame" x="128.66666666666666" y="38.333333333333314" width="97" height="657.66666666666674"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <state key="normal" title="로그아웃"/>
-                                        <connections>
-                                            <action selector="clickLogout:" destination="TUI-0M-LbA" eventType="touchUpInside" id="LpN-V0-fa0"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anq-X7-EWB">
+                                <rect key="frame" x="179" y="348.66666666666669" width="56" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAY-1p-GfB">
+                                <rect key="frame" x="137" y="486" width="140" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="로그아웃"/>
+                                <connections>
+                                    <action selector="clickLogout:" destination="TUI-0M-LbA" eventType="touchUpInside" id="LpN-V0-fa0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="oA8-Z1-A6s" secondAttribute="trailing" constant="10" id="6SW-Wt-D9h"/>
-                            <constraint firstItem="oA8-Z1-A6s" firstAttribute="top" secondItem="DPa-qX-7SJ" secondAttribute="bottom" constant="10" id="BtI-1Y-957"/>
-                            <constraint firstItem="k3b-GV-G4b" firstAttribute="top" secondItem="oA8-Z1-A6s" secondAttribute="bottom" constant="10" id="aUK-4A-TXY"/>
-                            <constraint firstItem="oA8-Z1-A6s" firstAttribute="leading" secondItem="L2c-lK-Ur5" secondAttribute="leadingMargin" constant="10" id="tjw-jR-Q7r"/>
+                            <constraint firstItem="anq-X7-EWB" firstAttribute="centerX" secondItem="L2c-lK-Ur5" secondAttribute="centerX" id="NlP-Sg-5uv"/>
+                            <constraint firstItem="anq-X7-EWB" firstAttribute="centerY" secondItem="L2c-lK-Ur5" secondAttribute="centerY" id="W4L-Kz-aEB"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginViewVontrollerSegue" id="oWh-8d-QiD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wNm-pS-agh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-691.304347826087" y="35.869565217391305"/>
+            <point key="canvasLocation" x="-738" y="36"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="rua-qd-cxM">
             <objects>
-                <viewController id="rvB-33-P7t" customClass="SignUpViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="rvB-33-P7t" customClass="SignUpViewController" customModule="Login" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jeV-iA-2MU"/>
                         <viewControllerLayoutGuide type="bottom" id="a9E-7E-0Ys"/>
@@ -230,28 +223,28 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="936"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dA5-8e-bGj">
-                                                <rect key="frame" x="21" y="184.33333333333337" width="372" height="367.33333333333326"/>
+                                                <rect key="frame" x="21" y="184.66666666666669" width="372.66666666666669" height="367.33333333333331"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyj-kD-8nr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="60"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="50"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="해 주 세 요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aka-F9-lVX">
-                                                        <rect key="frame" x="0.0" y="60" width="372" height="37.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="60" width="372.66666666666669" height="37.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="31"/>
                                                         <color key="textColor" red="0.44757811669999997" green="0.75009775950000002" blue="0.9676509781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2a-GS-Huz" userLabel="margin10">
-                                                        <rect key="frame" x="0.0" y="97.333333333333343" width="372" height="20"/>
+                                                        <rect key="frame" x="0.0" y="97.333333333333343" width="372.66666666666669" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="1dS-kb-hIl"/>
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="syE-wi-5bx">
-                                                        <rect key="frame" x="0.0" y="117.33333333333334" width="372" height="40"/>
+                                                        <rect key="frame" x="0.0" y="117.33333333333334" width="372.66666666666669" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="B0M-OH-wU5"/>
                                                         </constraints>
@@ -263,13 +256,13 @@
                                                         </connections>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uM9-22-8YG" userLabel="margin10">
-                                                        <rect key="frame" x="0.0" y="157.33333333333334" width="372" height="10"/>
+                                                        <rect key="frame" x="0.0" y="157.33333333333334" width="372.66666666666669" height="10"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="i39-rh-kAY"/>
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0j-UD-F2Q">
-                                                        <rect key="frame" x="0.0" y="167.33333333333334" width="372" height="40"/>
+                                                        <rect key="frame" x="0.0" y="167.33333333333334" width="372.66666666666669" height="40"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -278,13 +271,13 @@
                                                         </connections>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOo-ZR-0li" userLabel="margin10">
-                                                        <rect key="frame" x="0.0" y="207.33333333333334" width="372" height="10"/>
+                                                        <rect key="frame" x="0.0" y="207.33333333333334" width="372.66666666666669" height="10"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="cus-X2-ZA8"/>
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MbP-2Q-n1K">
-                                                        <rect key="frame" x="0.0" y="217.33333333333334" width="372" height="40.000000000000028"/>
+                                                        <rect key="frame" x="0.0" y="217.33333333333334" width="372.66666666666669" height="40.000000000000028"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
@@ -293,13 +286,13 @@
                                                         </connections>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5G-4c-Dgc" userLabel="margin10">
-                                                        <rect key="frame" x="0.0" y="257.33333333333337" width="372" height="10"/>
+                                                        <rect key="frame" x="0.0" y="257.33333333333337" width="372.66666666666669" height="10"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="ko0-cL-zf7"/>
                                                         </constraints>
                                                     </view>
                                                     <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 확인" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8TS-8r-dOP">
-                                                        <rect key="frame" x="0.0" y="267.33333333333337" width="372" height="40"/>
+                                                        <rect key="frame" x="0.0" y="267.33333333333337" width="372.66666666666669" height="40"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="join" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
@@ -308,13 +301,13 @@
                                                         </connections>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-DK-IuO" userLabel="margin10">
-                                                        <rect key="frame" x="0.0" y="307.33333333333337" width="372" height="10"/>
+                                                        <rect key="frame" x="0.0" y="307.33333333333337" width="372.66666666666669" height="10"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="Mnn-Lm-aF5"/>
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFO-Qi-5e6">
-                                                        <rect key="frame" x="0.0" y="317.33333333333337" width="372" height="39.999999999999943"/>
+                                                        <rect key="frame" x="0.0" y="317.33333333333337" width="372.66666666666669" height="40"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                         <state key="normal" title="회원가입"/>
@@ -323,7 +316,7 @@
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wV5-gi-O7X" userLabel="margin10">
-                                                        <rect key="frame" x="0.0" y="357.33333333333326" width="372" height="10"/>
+                                                        <rect key="frame" x="0.0" y="357.33333333333337" width="372.66666666666669" height="10"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="k3b-7d-Gfd"/>
                                                         </constraints>
@@ -355,7 +348,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hh-5s-4QD">
-                                <rect key="frame" x="354" y="20" width="40" height="40"/>
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="i4H-dh-X47"/>
                                     <constraint firstAttribute="width" secondItem="6hh-5s-4QD" secondAttribute="height" multiplier="1:1" id="zwP-Pk-Rhj"/>
@@ -392,7 +385,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNT-4j-vRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4v5-Hn-A0s" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="768.11594202898561" y="35.869565217391305"/>
+            <point key="canvasLocation" x="1675.3623188405797" y="35.869565217391305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rnF-oE-ZED">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="F4i-jy-4Ho" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P7K-TV-4Eh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="U6m-gT-J2J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KsT-f7-njz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="36"/>
         </scene>
     </scenes>
 </document>

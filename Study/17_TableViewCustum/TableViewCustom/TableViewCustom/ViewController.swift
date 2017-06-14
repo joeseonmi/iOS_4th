@@ -9,8 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    /*********************************************************/
+    //                  Button and Oulet                     //
+    /*********************************************************/
 
     @IBOutlet weak var tv: UITableView!
+    
+    /*********************************************************/
+    //                      Life Cycle                       //
+    /*********************************************************/
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -26,6 +34,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /*********************************************************/
+    //                         func                          //
+    /*********************************************************/
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return TripData.mainTitleLabel.count
